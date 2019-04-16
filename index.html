@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+       
+  <style>
+
+  body {
+ background-image: url("bgimage.jpg");
+
+}
+    h2{
+      color:olive;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 40px;
+      position:fixed;
+      left: 750px;
+
+
+    
+    }
+  h1{
+    color:olive;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+   
+  }
+  #labelEmp{
+  font-size: 20px;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  }
+  #labelPro{
+  font-size: 20px;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  }
+  #Employee{
+    position: fixed;
+  top: 150px;
+  left: 500px;
+  width: 400px;
+
+
+  }
+  #Project{
+    position: fixed;
+  top: 150px;
+  left: 1100px;
+  width: 400px;
+
+
+  }
+  #buttonProject{
+    position: fixed;
+  top: 430px;
+  left: 1400px;
+  width: 500px;
+  
+  }
+  #depIDPro{
+   position: fixed;
+   top:300px;
+   left: 1100px;
+ }
+ #depID{
+   position: fixed;
+   top:390px;
+   left: 500px;
+ }
+  #fName{
+   position: fixed;
+   top:300px;
+   left: 500px;
+ }
+ #lName{
+   position: fixed;
+   top:330px;
+   left: 500px;
+ }
+ #sex{
+   position: fixed;
+   top:360px;
+   left: 500px;
+ }
+ #depID{
+   position: fixed;
+   top:390px;
+   left: 500px;
+ }
+ #buttonEmployee{
+   position: fixed;
+   top:430px;
+   left: 780px;
+
+ }
+
+  </style>
+  <head>
+    <title>Company Management</title>
+ 
+  </head>
+  <body>
+    <h2>Company Management</h2>
+    <div id=Employee>
+    <div id=titleEmp>
+    <h1>Insert Employee</h1>
+  </div>
+    <form method="POST" action="/addEmp" >
+     <div id= labelEmp> <label>Enter the employee information:</label><br /> </div>
+     <hr />
+     <div id=SSN> <input
+        type="text"
+        name="SSN"
+        placeholder="Social security number"
+        required
+        size="50"
+      /></div>
+      <div id= fName> <input
+        type="text"
+        name="firstName"
+        placeholder="First name"
+        required
+        size="50"
+      /></div> 
+      <div id=lName><input
+        type="text"
+        name="lastName"
+        placeholder="Last name"
+        required
+        size="50"
+      /></div>
+      <div id=sex> <input
+        type="text"
+        name="sex"
+        placeholder="Sex"
+        required
+        size="50"
+      /></div>
+       <div id=depID><input
+        type="text"
+        name="depID"
+        placeholder="ID of the Department the employee is working for"
+        required
+          size="50"
+      /></div>
+     <div id=buttonEmployee> <input type="submit" value="Add Employee"/> </div>
+    </form>
+  </div>
+  
+    <div id= Project>
+      <div id=titleProject> <h1>Create Project</h1> </div>
+       <form method="POST" action="/createPro" >
+        <div id= labelPro> <label>Enter the project information:</label><br /> </div>
+        <hr />
+        <div id=pName>  <input
+           type="text"
+           name="ProName"
+           placeholder="Name of the Project"
+           required
+           size="50"
+         /></div>
+   
+          <div id= depIDPro> <input
+           type="text"
+           name="ProDepID"
+           placeholder="ID of the Department the project belongs to"
+           required
+             size="50"
+         /></div>
+        <div id=buttonProject> <input type="submit" value="Add Project" /> </div>
+       </form>
+      </div>
+       
+
+
+
+
+
+  </body>
+</html>
